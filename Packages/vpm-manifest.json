@@ -1,1 +1,36 @@
-{"dependencies": {}, "locked": {}}
+{
+  "dependencies": {
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.27"
+    },
+    "com.vrchat.base": {
+      "version": "3.5.0"
+    },
+    "com.vrchat.avatars": {
+      "version": "3.5.0"
+    },
+    "nadena.dev.ndmf": {
+      "version": "1.2.5"
+    }
+  },
+  "locked": {
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.27",
+      "dependencies": {}
+    },
+    "com.vrchat.base": {
+      "version": "3.5.0",
+      "dependencies": {}
+    },
+    "com.vrchat.avatars": {
+      "version": "3.5.0",
+      "dependencies": {
+        "com.vrchat.base": "3.5.0"
+      }
+    },
+    "nadena.dev.ndmf": {
+      "version": "1.2.5",
+      "dependencies": {}
+    }
+  }
+}

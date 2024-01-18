@@ -1,0 +1,17 @@
+{
+  "name": "net.nekobako.gesture-weight-smoothing",
+  "version": "0.0.0",
+  "displayName": "Gesture Weight Smoothing",
+  "description": "Tool for smoothing Gesture Weight parameters for VRChat avatars",
+  "unity": "2019.4",
+  "author": {
+    "name": "nekobako",
+    "url": "https://github.com/nekobako"
+  },
+  "license": "MIT",
+  "url": "https://github.com/nekobako/GestureWeightSmoothing/releases/download/0.0.0/net.nekobako.gesture-weight-smoothing-0.0.0.zip",
+  "vpmDependencies": {
+    "com.vrchat.avatars": ">=3.2.0",
+    "nadena.dev.ndmf": "^1.0.0"
+  }
+}
