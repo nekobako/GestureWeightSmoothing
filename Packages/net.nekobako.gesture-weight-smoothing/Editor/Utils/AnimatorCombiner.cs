@@ -314,7 +314,7 @@ namespace nadena.dev.modular_avatar.animation
         {
             if (o is AnimationClip clip)
             {
-                if (basePath == "" || clip.IsProxyAnimation()) return clip;
+                if (basePath == "" && EditorUtility.IsPersistent(clip) || clip.IsProxyAnimation()) return clip;
 
                 AnimationClip newClip = new AnimationClip();
                 newClip.name = clip.name;
@@ -328,8 +328,10 @@ namespace nadena.dev.modular_avatar.animation
 
                 SerializedProperty iter = srcSO.GetIterator();
 
-                while (iter.Next(false))
+                bool enterChildren = true;
+                while (iter.Next(enterChildren))
                 {
+                    enterChildren = false;
                     destSO.CopyFromSerializedProperty(iter);
                 }
 
