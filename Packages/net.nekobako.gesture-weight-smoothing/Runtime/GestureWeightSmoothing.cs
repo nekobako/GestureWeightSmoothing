@@ -20,7 +20,7 @@ namespace net.nekobako.GestureWeightSmoothing.Runtime
         public VRCAvatarDescriptor.AnimLayerType LayerType = VRCAvatarDescriptor.AnimLayerType.FX;
         public RuntimeAnimatorController AnimatorController = null;
         public bool WriteDefaults = false;
-        public List<ParameterMapping> ParameterMappings = new();
+        public List<ParameterMapping> ParameterMappings = new List<ParameterMapping>();
     }
 }
 
