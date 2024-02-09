@@ -14,9 +14,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Removed
 
 ### Fixed
-- Compiler error in Unity 2019. [`#2`](https://github.com/nekobako/GestureWeightSmoothing/pull/2)
 
 ### Security
+
+## [0.1.1] - 2024-02-09
+### Fixed
+- Compiler error in Unity 2019. [`#2`](https://github.com/nekobako/GestureWeightSmoothing/pull/2)
 
 ## [0.1.0] - 2024-01-20
 ### Added
