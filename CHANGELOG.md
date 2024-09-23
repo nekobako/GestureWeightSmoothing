@@ -6,11 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 ### Added
-- Add option to match WriteDefaults.
 
 ### Changed
-- Change required Unity version.
-- Rename assets.
 
 ### Deprecated
 
@@ -19,6 +16,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 ### Security
+
+## [0.2.0] - 2024-09-23
+### Added
+- Add option to match WriteDefaults.
+
+### Changed
+- Change required Unity version.
+- Rename assets.
 
 ## [0.1.1] - 2024-02-09
 ### Fixed
