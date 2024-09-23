@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3125060511253392292}
   - component: {fileID: 7653580511729350910}
   m_Layer: 0
-  m_Name: ListenWhileFist
+  m_Name: GestureWeightSmoothing_Fist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

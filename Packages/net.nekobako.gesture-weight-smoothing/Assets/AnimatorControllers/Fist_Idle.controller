@@ -112,7 +112,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 7
+  - m_ConditionMode: 3
     m_ConditionEvent: GestureLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
@@ -162,7 +162,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ListenWhileFist
+  m_Name: Fist_Idle
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: GestureWeightSmoothingFactor
@@ -252,7 +252,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 7
+  - m_ConditionMode: 3
     m_ConditionEvent: GestureRight
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
@@ -304,9 +304,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 4
     m_ConditionEvent: GestureLeft
-    m_EventTreshold: 1
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1347268050179643135}
   m_Solo: 0
@@ -329,9 +329,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 4
     m_ConditionEvent: GestureRight
-    m_EventTreshold: 1
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3086301758726986575}
   m_Solo: 0

@@ -12,11 +12,11 @@ This tool applies [GestureWeight transition correction](https://docs.hai-vr.dev/
 ## Usage
 Add one of the Prefabs in the `Packages > Gesture Weight Smoothing > Assets > Prefabs` folder to your avatar.
 
-- `ListenWhileFist` Prefab
+- `GestureWeightSmoothing_Fist` Prefab
   - Use this if your AnimatorControllers see GestureWeight parameters only while Fist.
   - If the Fist and Idle states are separated, this is probably the case.
   ![AnimatorController](https://github.com/nekobako/GestureWeightSmoothing/assets/4340778/a1ed410f-4744-434e-a08c-4ecf95eac412)
-- `ListenWhileFistAndIdle` Prefab
+- `GestureWeightSmoothing_Fist_Idle` Prefab
   - Use this if your AnimatorControllers see GestureWeight parameters while Idle as well as Fist.
   - If the Fist and Idle states are shared, this is probably the case.
   ![AnimatorController](https://github.com/nekobako/GestureWeightSmoothing/assets/4340778/898ea476-b42d-4c47-964d-023badb9f70e)
