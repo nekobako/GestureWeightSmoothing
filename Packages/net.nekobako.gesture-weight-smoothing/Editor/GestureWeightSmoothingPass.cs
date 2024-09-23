@@ -34,9 +34,9 @@ namespace net.nekobako.GestureWeightSmoothing.Editor
                 combiner.AddController(string.Empty, controller, null);
                 controller = combiner.Finish();
 
-                if (RemapParameters(component.ParameterMappings, controller) && component.AnimatorController is AnimatorController ac)
+                if (RemapParameters(component.ParameterMappings, controller, out bool writeDefaults) && component.AnimatorController is AnimatorController ac)
                 {
-                    combiner.AddController(string.Empty, ac, component.WriteDefaults);
+                    combiner.AddController(string.Empty, ac, component.MatchWriteDefaults ? writeDefaults : component.WriteDefaults);
                     controller = combiner.Finish();
                 }
 
@@ -63,13 +63,19 @@ namespace net.nekobako.GestureWeightSmoothing.Editor
             }
         }
 
-        private static bool RemapParameters(IEnumerable<GestureWeightSmoothing.ParameterMapping> mappings, AnimatorController controller)
+        private static bool RemapParameters(IEnumerable<GestureWeightSmoothing.ParameterMapping> mappings, AnimatorController controller, out bool writeDefaults)
         {
             bool remapped = false;
+            writeDefaults = false;
 
             foreach (var state in AnimationUtil.States(controller))
             {
                 remapped |= RemapParameters(mappings, state);
+
+                if (state.motion is not BlendTree blendTree || blendTree.blendType != BlendTreeType.Direct)
+                {
+                    writeDefaults |= state.writeDefaultValues;
+                }
             }
 
             return remapped;
