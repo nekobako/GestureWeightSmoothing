@@ -72,7 +72,7 @@ namespace net.nekobako.GestureWeightSmoothing.Editor
             {
                 remapped |= RemapParameters(mappings, state);
 
-                if (state.motion is not BlendTree blendTree || blendTree.blendType != BlendTreeType.Direct)
+                if (!(state.motion is BlendTree blendTree) || blendTree.blendType != BlendTreeType.Direct)
                 {
                     writeDefaults |= state.writeDefaultValues;
                 }

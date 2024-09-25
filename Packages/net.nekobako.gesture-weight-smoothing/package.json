@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "displayName": "Gesture Weight Smoothing",
   "description": "Tool to smooth Gesture Weight parameters for VRChat avatars",
-  "unity": "2022.3",
+  "unity": "2019.4",
   "author": {
     "name": "nekobako",
     "url": "https://nekobako.net"

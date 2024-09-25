@@ -21,7 +21,7 @@ namespace net.nekobako.GestureWeightSmoothing.Runtime
         public RuntimeAnimatorController AnimatorController = null;
         public bool MatchWriteDefaults = true;
         public bool WriteDefaults = false;
-        public List<ParameterMapping> ParameterMappings = new();
+        public List<ParameterMapping> ParameterMappings = new List<ParameterMapping>();
     }
 }
 
