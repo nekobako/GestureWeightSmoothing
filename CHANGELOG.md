@@ -8,7 +8,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 ### Changed
-- Support Unity 2019 again.
 
 ### Deprecated
 
@@ -17,6 +16,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 ### Security
+
+## [0.3.0] - 2024-09-25
+### Changed
+- Support Unity 2019 again.
 
 ## [0.2.0] - 2024-09-23
 ### Added
