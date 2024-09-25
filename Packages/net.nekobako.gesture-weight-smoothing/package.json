@@ -11,7 +11,7 @@
   "license": "MIT",
   "url": "https://github.com/nekobako/GestureWeightSmoothing/releases/download/0.3.0/net.nekobako.gesture-weight-smoothing-0.3.0.zip",
   "vpmDependencies": {
-    "com.vrchat.avatars": ">=3.2.0",
+    "com.vrchat.avatars": ">=3.4.2",
     "nadena.dev.ndmf": "^1.0.0"
   }
 }
